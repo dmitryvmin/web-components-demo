@@ -1,7 +1,6 @@
 {
-  "name": "frameio-frontend-exercise",
+  "name": "web-components",
   "version": "1.0.0",
-  "description": "Frame.io’s frontend take-home exercise",
   "private": true,
   "main": "index.js",
   "scripts": {

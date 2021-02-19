@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccfafd54-5aeb-4688-ae96-7e1023a06a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TypeaheadComponent/APIDataController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeaheadComponent/APIDataController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TypeaheadComponent/AutocompleteClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeaheadComponent/AutocompleteClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TypeaheadComponent/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeaheadComponent/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,9 @@
       <updated>1612802917413</updated>
       <workItem from="1612802918965" duration="886000" />
       <workItem from="1612804080293" duration="36928000" />
-      <workItem from="1612891305799" duration="1311000" />
+      <workItem from="1612891305799" duration="1345000" />
+      <workItem from="1613678628090" duration="3600000" />
+      <workItem from="1613751550431" duration="447000" />
     </task>
     <servers />
   </component>

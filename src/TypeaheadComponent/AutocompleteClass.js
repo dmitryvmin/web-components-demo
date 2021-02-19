@@ -14,20 +14,28 @@ export default class AutocompleteClass {
     if (typeof this.onRequestData !== 'function') {
       return;
     }
+    this.displayLoadingNotification(true);
     const results = await this.onRequestData({
       query,
       numOfResults: this.numOfResults,
     });
+    this.displayLoadingNotification(false);
     this.updateDropdown(results);
   }
 
+  displayLoadingNotification(isLoading) {
+    if (isLoading) {
+      this.rootEl.querySelector('#notification').classList.remove('hide');
+    } else {
+      this.rootEl.querySelector('#notification').classList.add('hide');
+    }
+  }
+
   updateDropdown(results) {
+    this.clearResults();
     if (results.length) {
-      this.results = results;
       this.listEl.appendChild(this.createResultsEl(results));
       this.listEl.classList.remove('hide');
-    } else {
-      this.clearResults();
     }
   }
 
@@ -172,5 +180,12 @@ export default class AutocompleteClass {
     this.listEl.classList.add('results');
     this.listEl.classList.add('hide');
     this.rootEl.appendChild(this.listEl);
+
+    const notificationEl = document.createElement('div');
+
+    notificationEl.classList.add('notification', 'hide');
+    notificationEl.textContent = 'loading';
+    notificationEl.id = 'notification';
+    this.rootEl.appendChild(notificationEl);
   }
 }

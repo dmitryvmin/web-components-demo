@@ -3,6 +3,7 @@ template.innerHTML = `
   <style>
     #typeahead-component {
       margin: 10px;
+      position: relative;
     }
     .form-group {
       width: 200px;
@@ -52,6 +53,18 @@ template.innerHTML = `
       padding: 5px;
       border: 1px solid #ccc;
     }
+    
+    .notification {
+  opacity: 1;
+  position: absolute;
+    opacity: 1;
+    top: 0;
+    right: 0;
+}
+
+.notification.hide {
+  opacity: 0;
+}
   </style>
   <div id="typeahead-component" class="gh-users-group form-group">
     <label id="label"></label>

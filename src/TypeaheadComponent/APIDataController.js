@@ -11,8 +11,6 @@ const APIDataController = ({
     query,
     numOfResults,
   }) => {
-    // TODO: to make the controller more modular, transforms on the API response below
-    //  should also be lifted and passed as a prop: formatResponse(data) => {...}
     let data = await useFetch(input(query, numOfResults), init);
     data = pickFromGitHubResponse(data);
     data = mapDataKeys(data, [['value', 'login']]);
